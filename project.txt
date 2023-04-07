@@ -1,0 +1,14 @@
+Bismillah hir rahman nir rahim
+
+##### ShiaBot #####
+* Create an approval system.
+
+## Approval System ##
+* Requirements:
+1. Interactive buttons, 2. that can also create channels, 3. Store input, 4. Output accordingly
+(which may include giving roles/sending a message in a setup logs channel)
+* We will also need a few things that require setting up:
+1. VerifyMe button channel, 2. Whether to DM user or create a ticket, (Optionally) 3. Log channel
+
+## Config System ##
+Example JSON:

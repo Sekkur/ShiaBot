@@ -1,0 +1,13 @@
+{
+  "general":
+  {
+    "approval": {
+      "verifyButtonChannel": "general",
+      "channelType": "dm_channel",
+      "cooldown": 30
+    }
+  },
+  "private": {
+    "token": "e"
+  }
+}
