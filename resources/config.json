@@ -1,13 +1,12 @@
 {
-  "admin":
-  {
+  "members": {
     "approval": {
       "verifyButtonChannel": "general",
-      "channelType": "dm_channel",
+      "channelType": "dm",
       "cooldown": 30
     }
   },
   "private": {
-    "token": "e"
+    "token": "$TOKEN"
   }
 }

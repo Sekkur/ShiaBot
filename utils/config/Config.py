@@ -6,17 +6,19 @@ class Config(metaclass=abc.ABCMeta):
 
     def __init__(self, path: str, data: dict[Any, Any]):
         self.path = path
-        self.data: dict[Any, Any]() = data
+        self.data: dict[Any, Any] = data
 
-    def set(self, key: Any, value: Any) -> None:
+    def addCategory(self, key: Any, value: Any) -> None:
         self.data.update({key: value})
+
+    def hasCategory(self, key: Any) -> bool:
+        return isinstance(self.get(key), dict)
 
     def get(self, key: Any) -> Any:
         return self.data.get(key)
 
-    @abc.abstractmethod
-    def getAll(self):
-        return
+    def getAll(self) -> dict[Any, Any]:
+        return self.data
 
     @abc.abstractmethod
     def save(self):
