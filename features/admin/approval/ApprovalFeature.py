@@ -1,7 +1,6 @@
-import discord
 from features.Feature import Feature
-from features.approval.ApprovalCog import ApprovalCog
-from features.approval.ApprovalConfig import ApprovalConfig
+from features.admin.approval.ApprovalCog import ApprovalCog
+from features.admin.approval.ApprovalConfig import ApprovalConfig
 
 
 class ApprovalFeature(Feature):

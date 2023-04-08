@@ -1,4 +1,4 @@
-from Singleton import Singleton
+from .Singleton import Singleton
 
 
 class InstanceStorage(Singleton):
@@ -8,5 +8,5 @@ class InstanceStorage(Singleton):
     def add(self, obj: object):
         self.objects.update({obj.__class__.__name__: obj})
 
-    def get(self, obj: object):
-        return self.objects.get(obj.__class__.__name__)
+    def get(self, name: str):
+        return self.objects.get(name)
