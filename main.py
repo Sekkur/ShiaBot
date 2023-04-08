@@ -12,11 +12,10 @@ discord.utils.setup_logging(level=logging.INFO, root=False)
 
 FILE_PATH = "resources/config.json"
 storage = InstanceStorage()
-InstanceStorage().add(JSONConfig(FILE_PATH))
-
+storage.add(JSONConfig(FILE_PATH))
 config = storage.get(JSONConfig.__name__)
 print(config)
-print(InstanceStorage().get(JSONConfig.__name__))
+print(InstanceStorage._self.get(JSONConfig.__name__))
 
 @client.event
 async def on_ready():
